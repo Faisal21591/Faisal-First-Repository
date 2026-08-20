@@ -1,0 +1,228 @@
+body{
+    background-image: url(H:/Bootstrap/ResponsiveWebSiteByAmitSinha/Middle-portionrRS/image/3pic.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-item{
+    height:450px;
+    background:#000;
+}
+
+.carousel-item img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+.center-logo{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;   /* Stack vertically */
+    align-items: center;      /* Center horizontally */
+
+    color: white;
+    font-weight: bold;
+}
+
+.center-logo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.center-logo span{
+    font-size: 14px;
+    margin-top: 3px;
+    line-height: 1;
+}
+.center-logo span{
+    margin-top: 2px;   /* Reduce gap */
+    font-size: 13px;   /* or 15px */
+}
+
+
+#banner{
+    margin-top: 20px;
+    background: url(H:/Bootstrap/ResponsiveWebSiteByAmitSinha/Middle-portionrRS/image/1pic.jpg) no-repeat 0 0;
+    background-size: cover;
+}
+.banner-title{
+    padding: 5rem;
+}
+
+.banner-title h1{
+    background: rgba(255,255,255,0.8);
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+}
+
+.banner-title p.lead{
+    color: white;
+    background: rgba(231,76,60,0.7);
+    padding: 10px;
+}
+
+
+.nav-item .nav-link:hover{
+    background: green;
+    border-radius: 3px;
+}
+
+.dropdown-item:hover{
+    background: green;
+}
+
+.dropdown-submenu{
+    position: relative;
+}
+
+/* Show submenu on hover */
+.dropdown-submenu:hover > .dropdown-menu{
+    display: block;
+}
+
+/* Keep submenu aligned */
+.dropdown-submenu{
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu{
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+}
+
+
+/*.carousel{
+    margin: 100px auto;
+    width: 90%;
+    border: 5px solid red;
+    display: flex;
+    overflow-x: auto;
+    gap: 1em;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 5s infinite linear;
+    padding-right: 1em;
+
+}
+
+.card{
+    flex: 0 0 5em;
+    height: 5em;
+    padding: 1em;
+    background: cornflowerblue;
+    font-size: 3rem;
+    border-radius: .2em;
+    text-align: center;
+    align-content: center;
+}
+
+@keyframes spin{
+    from{translate: 0;}
+    to {translate: -100%; }
+}*/
+
+.carousel-wrapper{
+    overflow:hidden;
+    width:100%;
+}
+
+.carousel-track{
+    display:flex;
+    width:max-content;
+    animation:scroll 25s linear infinite;
+}
+
+.carousel-wrapper:hover .carousel-track{
+    animation-play-state:paused;
+}
+
+.my-slide{
+    position: relative;
+    width:320px;
+    height:220px;
+    margin-right:20px;
+    flex-shrink:0;
+    cursor:pointer;
+    overflow:hidden;
+    border-radius:12px;
+}
+
+.my-slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+.slide-caption{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.7);
+    color:white;
+    padding:10px;
+    z-index:100;
+}
+
+.slide-caption h5{
+    margin:0;
+    font-size:20px;
+}
+
+.slide-caption p{
+    margin:5px 0 0;
+    font-size:14px;
+}
+
+.my-slide:hover img{
+    transform:scale(1.08);
+}
+
+
+@keyframes scroll{
+
+0%{
+transform:translateX(0);
+}
+
+100%{
+transform:translateX(-50%);
+}
+
+}
+/*-------------------Footer------------------------*/
+.social-icon {
+  font-size: 2rem;
+  margin: 0 10px;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* removes underline */
+  border: none;          /* removes border line */
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Brand hover colors */
+.youtube:hover { color: #FF0000; }
+.linkedin:hover { color: #0077B5; }
+.whatsapp:hover { color: #25D366; }
+.x:hover { color: #1DA1F2; }
+.facebook:hover { color: #1877F2; }
+/*-------------------Footer Ends------------------------*/
